@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Etch-a-Sketch</string>
+
+    <string name="refresh_button">Recalculate</string>
+    <string name="action_settings">Settings</string>
+    <string name="hint">Type answer here and press Done.</string>
+    <string name="ok">OK</string>
+</resources>

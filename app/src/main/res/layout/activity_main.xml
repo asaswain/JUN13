@@ -1,0 +1,97 @@
+<!-- I know this isn't the best way to create a horizontal scrolling view, but it works -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="left"
+    android:orientation="vertical"
+    android:background="@color/red"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="left"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/Yellow"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/yellow"/>
+
+        <View
+            android:id="@+id/Orange"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/orange"/>
+
+        <View
+            android:id="@+id/Green"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/green"/>
+
+        <View
+            android:id="@+id/Blue"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/blue"/>
+
+        <View
+            android:id="@+id/Purple"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/purple"/>
+
+        <View
+            android:id="@+id/Black"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="left">
+        <View
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:id="@+id/paper"
+            android:background="@color/darkgrey">
+        </View>
+
+        <edu.nyu.scps.JUN13.VerticalSeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_gravity="bottom"
+            android:progress="0"
+            android:id="@+id/locationY"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:gravity="left"
+        android:orientation="horizontal">
+
+        <SeekBar
+            android:orientation="horizontal"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:progress="0"
+            android:id="@+id/locationX"/>
+    </LinearLayout>
+
+    <TextView
+        android:text="@string/app_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity ="center"
+        android:textSize="30sp"
+        android:background="@color/red"/>
+</LinearLayout>
