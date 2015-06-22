@@ -23,15 +23,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // insert a SketchPadView object into the RelativeLayout for user to draw on
+
         final RelativeLayout sketchPadLayout = (RelativeLayout) findViewById(R.id.paper);
-
-        // build views for each bar of the bar graph
-
-//        RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(
-//                ViewGroup.LayoutParams.MATCH_PARENT, // width
-//                ViewGroup.LayoutParams.MATCH_PARENT  //height
-//        );
-
         sketchPad = new SketchPadView(MainActivity.this);
         sketchPadLayout.addView(sketchPad);
 
