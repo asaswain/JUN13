@@ -12,10 +12,11 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:id="@+id/palette"
         android:gravity="left"
         android:orientation="horizontal">
 
-        <View
+       <!--  <View
             android:id="@+id/Yellow"
             android:layout_width="50dp"
             android:layout_height="50dp"
@@ -49,7 +50,7 @@
             android:id="@+id/Black"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:background="@color/black"/>
+            android:background="@color/black"/> -->
 
     </LinearLayout>
 
@@ -58,12 +59,20 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="left">
-        <View
+
+        <RelativeLayout
             android:layout_width="300dp"
             android:layout_height="300dp"
             android:id="@+id/paper"
             android:background="@color/darkgrey">
-        </View>
+        </RelativeLayout>
+
+        <!-- <View
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:id="@+id/paper"
+            android:background="@color/darkgrey">
+        </View> -->
 
         <edu.nyu.scps.JUN13.VerticalSeekBar
             android:layout_width="wrap_content"
